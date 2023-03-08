@@ -34,7 +34,7 @@ export default function Home() {
                         <div className='mr-6'>
                             <h3 className='header-text text-[70px] max-[1220px]:text-[50px] max-[632px]:text-[30px] leading-[80px] max-[1220px]:leading-[60px] max-[632px]:leading-[40px]  margin-0 '><span className='max-[632px]:hidden accent-text leading-none'>Welcome</span> <span className='max-[632px]:hidden text-[1rem] leading-none text-white normal-text'>to my personal website, I am</span><br />
                                 Mawit Bikom Gad, A full-stack web developer</h3>
-                            <p className='normal-text mt-[50px] max-[632px]:text-[15px] max-[1120px]:mt-[25px]'>I'm a self-taught full-stack web developer with a passion for creating dynamic and responsive websites. With expertise in JavaScript, UI/UX design, database schema design, and software architecture design, I specialize in making intuitive and well-designed web applications.</p>
+                            <p className='normal-text mt-[50px] max-[632px]:text-[15px] max-[1120px]:mt-[25px]'>I am a self-taught full-stack web developer with a passion for creating dynamic and responsive websites. With expertise in JavaScript, UI/UX design, database schema design, and software architecture design, I specialize in making intuitive and well-designed web applications.</p>
                         </div>
                         <Image src={avatar} alt={"avatar"} width={550} height={550} className="m-4 max-[1220px]:w-[350px] max-[1220px]:h-[350px] max-[632px]:w-[200px] max-[632px]:h-[200px] max-[964px]:mt-[50px]" />
                     </div>
@@ -85,7 +85,7 @@ export default function Home() {
                     <h3 className='my-[100px] max-[964px]:my-[50px] text-center text-[70px] max-[964px]:text-[50px] max-[632px]:text-[35px] header-text' >About me</h3>
                     <p className='mt-[20px] text-[25px] max-[1120px]:text-[1rem] '>I am a self-motivated individual with a passion for problem-solving and helping others using technology. Through self-study, I have gained a wealth of knowledge in both front-end and back-end development. I am constantly learning and experimenting with new technologies.</p>
                     <p className='mt-[20px] text-[25px] max-[1120px]:text-[1rem] '>In addition to web development, I love reading about the latest tech trends and advancements, and I often write articles about my findings. I believe that staying up-to-date with the latest technologies is crucial for creating modern and innovative web applications.</p>
-                    <p className='mt-[20px] text-[25px] max-[1120px]:text-[1rem] '>On this website, you'll find information about my latest projects and my experience as a web developer. I'm always excited to learn and grow, so feel free to reach out and connect with me!</p>
+                    <p className='mt-[20px] text-[25px] max-[1120px]:text-[1rem] '>On this website, you will find information about my latest projects and my experience as a web developer. I am always excited to learn and grow, so feel free to reach out and connect with me!</p>
                 </section>
                 {/* The about section ending*/}
 
