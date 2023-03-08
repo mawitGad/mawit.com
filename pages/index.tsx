@@ -34,7 +34,7 @@ export default function Home() {
                         <div className='mr-6'>
                             <h3 className='header-text text-[70px] max-[1220px]:text-[50px] max-[632px]:text-[30px] leading-[80px] max-[1220px]:leading-[60px] max-[632px]:leading-[40px]  margin-0 '><span className='max-[632px]:hidden accent-text leading-none'>Welcome</span> <span className='max-[632px]:hidden text-[1rem] leading-none text-white normal-text'>to my personal website, I am</span><br />
                                 Mawit Bikom Gad, A full-stack web developer</h3>
-                            <p className='normal-text mt-[50px] max-[632px]:text-[15px] max-[1120px]:mt-[25px]'>I'm a self-taught full-stack web developer with a passion for creating dynamic and responsive websites. With expertise in JavaScript, UI/UX design, database schema design, and software architecture, I specialize in making intuitive and well-designed web applications.</p>
+                            <p className='normal-text mt-[50px] max-[632px]:text-[15px] max-[1120px]:mt-[25px]'>I'm a self-taught full-stack web developer with a passion for creating dynamic and responsive websites. With expertise in JavaScript, UI/UX design, database schema design, and software architecture design, I specialize in making intuitive and well-designed web applications.</p>
                         </div>
                         <Image src={avatar} alt={"avatar"} width={550} height={550} className="m-4 max-[1220px]:w-[350px] max-[1220px]:h-[350px] max-[632px]:w-[200px] max-[632px]:h-[200px] max-[964px]:mt-[50px]" />
                     </div>
