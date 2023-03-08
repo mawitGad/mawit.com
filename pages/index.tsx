@@ -45,34 +45,34 @@ export default function Home() {
                 <section className=' relative w-full'>
                     <h3 className='text-[70px] max-[964px]:text-[50px] max-[632px]:text-[35px] text-center mb-[100px] header-text  '>Featured projects</h3>
                     <div className='flex items-center mt-[200px] max-[964px]:mt-[100px] max-[632px]:flex-col max-[632px]:items-start'>
-                        <div className='relative w-1/2 max-[632px]:w-full max-[632px]:h-[50vw] h-[35vw] max-h-[450px] rounded-md overflow-hidden shadow-project_shadow max-[632px]:w-'>
+                        <div className='relative w-1/2 max-[632px]:w-full max-[632px]:h-[50vw] h-[35vw] max-h-[450px] rounded-md overflow-hidden  max-[632px]:w-'>
                             <Image src={litumbaPreviewProjects} fill alt='litumba preview project' className='object-cover' />
                         </div>
-                        <div className='flex-col w-1/2 flex items-end relative max-[632px]:w-full max-[632px]:mt-4'>
+                        <div className=' flex-col w-1/2 flex items-end relative max-[632px]:w-full max-[632px]:mt-4'>
                             <h2 className='text-[40px] text-end header-text  max-[632px]:text-[20px]'>Litumba</h2>
-                            <p className='mt-4 max-[632px]:mt-1 w-[140%] max-[632px]:w-[100%] bg-[#5A82AC] p-4 rounded-md text-[25px] max-[1120px]:text-[15px] max-[632px]:text-[10px]'>litumba is a web app that aims at providing a centralized online platform, where members of the Bakweri tribe in Cameroon can meet, share and grow both socially and economically. </p>
+                            <p className='shadow-project_shadow mt-4 max-[632px]:mt-1 w-[140%] max-[632px]:w-[100%] bg-[#5A82AC] p-4 rounded-md text-[25px] max-[1120px]:text-[15px] max-[632px]:text-[10px]'>litumba is a web app that aims at providing a centralized online platform, where members of the Bakweri tribe in Cameroon can meet, share and grow both socially and economically. </p>
                             <div className='mt-4 max-[632px]:mt-1'><span className=' ml-4 max-[632px]:text-[12px]'>Next.js</span><span className='ml-4'>tailwind</span><span className='ml-4'>Mongodb</span></div>
                             <OpenIcon className='mt-4 max-[632px]:mt-1 ' />
                         </div>
                     </div>
                     <div className='flex flex-row-reverse items-center mt-[200px] max-[964px]:mt-[100px] max-[632px]:flex-col max-[632px]:items-start'>
-                        <div className='relative w-1/2 max-[632px]:w-full max-[632px]:h-[50vw] h-[35vw] max-h-[450px] rounded-md overflow-hidden shadow-project_shadow max-[632px]:w-'>
+                        <div className='relative w-1/2 max-[632px]:w-full max-[632px]:h-[50vw] h-[35vw] max-h-[450px] rounded-md overflow-hidden  max-[632px]:w-'>
                             <Image src={ndoloPreviewProjects} fill alt='litumba preview project' className='object-cover' />
                         </div>
-                        <div className='flex-col w-1/2 flex items-start relative max-[632px]:w-full max-[632px]:mt-4'>
+                        <div className=' flex-col w-1/2 flex items-start relative max-[632px]:w-full max-[632px]:mt-4'>
                             <h2 className='text-[40px] text-end header-text  max-[632px]:text-[20px]'>Ndolo</h2>
-                            <p className='mt-4 max-[632px]:mt-1 w-[140%] max-[632px]:w-[100%] bg-[#5A82AC] p-4 rounded-md text-[25px] max-[1120px]:text-[15px] max-[632px]:text-[10px]'>Ndolo is an online dating platform for Cameroonians leaving abroad, this web app is out to reduce the stress that Cameroonians living out of the country have in terms of finding a partner that shares their cultural morals and values.</p>
+                            <p className='shadow-project_shadow mt-4 max-[632px]:mt-1 w-[140%] max-[632px]:w-[100%] bg-[#5A82AC] p-4 rounded-md text-[25px] max-[1120px]:text-[15px] max-[632px]:text-[10px]'>Ndolo is an online dating platform for Cameroonians leaving abroad, this web app is out to reduce the stress that Cameroonians living out of the country have in terms of finding a partner that shares their cultural morals and values.</p>
                             <div className='mt-4 max-[632px]:mt-1'><span className=' ml-4 max-[632px]:text-[12px]'>React.js</span><span className='ml-4'>Node.js</span><span className='ml-4'>Mongodb</span></div>
                             <OpenIcon className='mt-4 max-[632px]:mt-1 ' />
                         </div>
                     </div>
                     <div className='flex items-center mt-[200px] max-[964px]:mt-[100px] max-[632px]:flex-col max-[632px]:items-start'>
-                        <div className='relative w-1/2 max-[632px]:w-full max-[632px]:h-[50vw] h-[35vw] max-h-[450px] rounded-md overflow-hidden shadow-project_shadow max-[632px]:w-'>
+                        <div className='relative w-1/2 max-[632px]:w-full max-[632px]:h-[50vw] h-[35vw] max-h-[450px] rounded-md overflow-hidden  max-[632px]:w-'>
                             <Image src={litumbaPreviewProjects} fill alt='litumba preview project' className='object-cover' />
                         </div>
-                        <div className='flex-col w-1/2 flex items-end relative max-[632px]:w-full max-[632px]:mt-4'>
+                        <div className=' flex-col w-1/2 flex items-end relative max-[632px]:w-full max-[632px]:mt-4'>
                             <h2 className='text-[40px] text-end header-text  max-[632px]:text-[20px]'>Litumba</h2>
-                            <p className='mt-4 max-[632px]:mt-1 w-[140%] max-[632px]:w-[100%] bg-[#5A82AC] p-4 rounded-md text-[25px] max-[1120px]:text-[15px] max-[632px]:text-[10px]'>Ndolo is an online dating platform for Cameroonians leaving abroad, this web app is out to reduce the stress that Cameroonians living out of the country have in terms of finding a partner that shares their cultural morals and values.</p>
+                            <p className='shadow-project_shadow mt-4 max-[632px]:mt-1 w-[140%] max-[632px]:w-[100%] bg-[#5A82AC] p-4 rounded-md text-[25px] max-[1120px]:text-[15px] max-[632px]:text-[10px]'>Ndolo is an online dating platform for Cameroonians leaving abroad, this web app is out to reduce the stress that Cameroonians living out of the country have in terms of finding a partner that shares their cultural morals and values.</p>
                             <div className='mt-4 max-[632px]:mt-1'><span className=' ml-4 max-[632px]:text-[12px]'>React.js</span><span className='ml-4'>Node.js</span><span className='ml-4'>Mongodb</span></div>
                             <OpenIcon className='mt-4 max-[632px]:mt-1 ' />
                         </div>
