@@ -5,8 +5,8 @@ import { avatar, litumbaPreviewProject, litumbaPreviewProjects, ndoloPreviewProj
 import { BlogIcon, GithubIcon } from '@/assets/icons'
 import Image from 'next/image'
 import { OpenIcon } from "../assets/icons"
-import useIndex from './useIndex'
 import Link from 'next/link'
+import useIndex from '@/customHooks/useIndex'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -131,7 +131,7 @@ export default function Home() {
                 {/* The stack section ending */}
 
                 {/* The about section beginning*/}
-                <section className='max-w-[800px] relative m-auto'>
+                <section className='max-w-[800px] relative m-auto text-justify'>
                     <h3 className='my-[100px] max-[964px]:my-[50px] text-center text-[70px] max-[964px]:text-[50px] max-[632px]:text-[35px] header-text' >About me</h3>
                     <p className='mt-[20px] text-[25px] max-[1120px]:text-[1rem] '>I am a self-motivated individual with a passion for problem-solving and helping others using technology. Through self-study, I have gained a wealth of knowledge in both front-end and back-end development. I am constantly learning and experimenting with new technologies.</p>
                     <p className='mt-[20px] text-[25px] max-[1120px]:text-[1rem] '>In addition to web development, I love reading about the latest tech trends and advancements, and I often write articles about my findings. I believe that staying up-to-date with the latest technologies is crucial for creating modern and innovative web applications.</p>
