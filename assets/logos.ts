@@ -1,10 +1,27 @@
-export const expressLogo = "/logos/express-logo.png"
-export const gmailLogo = "/logos/gmail-logo.png"
-export const linkedinLogo = "/logos/linkedin-logo.png"
-export const mongodbLogo = "/logos/mongodb-logo.png"
-export const nextLogo = "/logos/next-logo.png"
-export const nodeLogo = "/logos/node-logo.png"
-export const reactLogo = "/logos/react-logo.png"
-export const scssLogo = "/logos/scss-logo.png"
-export const socketIoLogo = "logos/socket.io-logo.png"
-export const tailwindLogo = "logos/tailwind-logo.png"
+import Express from "../public/logos/express-logo.png";
+import Gmail from "../public/logos/gmail-logo.png";
+import LinkedIn from "../public/logos/linkedin-logo.png";
+import MongoDb from "../public/logos/mongodb-logo.png";
+import Next from "../public/logos/next-logo.png";
+import Node from "../public/logos/node-logo.png";
+import React from "../public/logos/react-logo.png";
+import Scss from "../public/logos/scss-logo.png";
+import Socket from "../public/logos/socket.io-logo.png";
+import Tailwind from "../public/logos/tailwind-logo.png";
+import Github from "../public/logos/github-logo.svg";
+import Git from "../public/logos/git-logo.svg";
+import Vercel from "../public/logos/vercel-logo.svg";
+
+export const expressLogo = Express;
+export const gmailLogo = Gmail;
+export const linkedinLogo = LinkedIn;
+export const mongodbLogo = MongoDb;
+export const nextLogo = Next;
+export const nodeLogo = Node;
+export const reactLogo = React;
+export const scssLogo = Scss;
+export const socketIoLogo = Socket;
+export const tailwindLogo = Tailwind;
+export const githubLogo = Github;
+export const gitLogo = Git;
+export const vercelLogo = Vercel;

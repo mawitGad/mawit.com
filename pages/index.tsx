@@ -1,14 +1,18 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
-import { expressLogo, gmailLogo, linkedinLogo, mongodbLogo, nextLogo, nodeLogo, reactLogo, scssLogo, socketIoLogo, tailwindLogo } from '@/assets/logos'
+import { expressLogo, githubLogo, gitLogo, gmailLogo, linkedinLogo, mongodbLogo, nextLogo, nodeLogo, reactLogo, scssLogo, socketIoLogo, tailwindLogo, vercelLogo } from '@/assets/logos'
 import { avatar, litumbaPreviewProject, litumbaPreviewProjects, ndoloPreviewProject, ndoloPreviewProjects, personalWebsitePreviewProject, personalWebsitePreviewProjects } from '@/assets/images'
-import { BlogIcon } from '@/assets/icons'
+import { BlogIcon, GithubIcon } from '@/assets/icons'
 import Image from 'next/image'
 import { OpenIcon } from "../assets/icons"
+import useIndex from './useIndex'
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+    const { saveEmail } = useIndex()
+
     return (
         <>
             <Head>
@@ -20,16 +24,12 @@ export default function Home() {
             <main className='px-8 w-[100vw] max-w-[1500px] relative m-auto max-[632px]:px-[10px]'>
                 {/* The hero section beginning */}
                 <section className=' relative h-fit max-h-[9000px]'>
-                    <nav className='relative top-0 w-full py-4 flex justify-end normal-text text-[1.5rem] items-end'>
-                        <a className=' mx-4 max-[732px]:hidden' href="">Welcome</a>
-                        <a className=' mx-4 max-[732px]:hidden' href="">Project</a>
-                        <a className=' mx-4 max-[732px]:hidden' href="">About</a>
-                        <a className=' mx-4 max-[732px]:hidden' href="">Contact</a>
-                        <span className='flex mx-2 items-center accent-text'>
-                            <a href="" className='mx-2'>My blog</a>
-                            <BlogIcon className='w-[28px] h-[28px]' />
-                        </span>
-                    </nav>
+                    <div className='mt-[20px] flex justify-end'>
+                        <Link href={"https://mawit.hashnode.dev/"} className='text-[25px] flex items-center py-[5px] px-[10px] bg-[#5A82AC] rounded-lg header-text'>
+                            <BlogIcon className='w-[30px] h-[30px] mr-4' />
+                            <span>My blog</span>
+                        </Link>
+                    </div>
                     <div className='flex items-center max-[964px]:flex-col max-[964px]:my-[60px] max-[964px]:text-center my-[150px]'>
                         <div className='mr-6'>
                             <h3 className='header-text text-[70px] max-[1220px]:text-[50px] max-[632px]:text-[30px] leading-[80px] max-[1220px]:leading-[60px] max-[632px]:leading-[40px]  margin-0 '><span className='max-[632px]:hidden accent-text leading-none'>Welcome</span> <span className='max-[632px]:hidden text-[1rem] leading-none text-white normal-text'>to my personal website, I am</span><br />
@@ -46,39 +46,89 @@ export default function Home() {
                     <h3 className='text-[70px] max-[964px]:text-[50px] max-[632px]:text-[35px] text-center mb-[100px] header-text  '>Featured projects</h3>
                     <div className='flex items-center mt-[200px] max-[964px]:mt-[100px] max-[632px]:flex-col max-[632px]:items-start'>
                         <div className='relative w-1/2 max-[632px]:w-full max-[632px]:h-[50vw] h-[35vw] max-h-[450px] rounded-md overflow-hidden  max-[632px]:w-'>
-                            <Image src={litumbaPreviewProjects} fill alt='litumba preview project' className='object-cover' />
+                            <Link href={"https://litumba-client.vercel.app"} >
+                                <Image src={litumbaPreviewProjects} fill alt='litumba preview project' className='object-cover' />
+                            </Link>
                         </div>
                         <div className=' flex-col w-1/2 flex items-end relative max-[632px]:w-full max-[632px]:mt-4'>
                             <h2 className='text-[40px] text-end header-text  max-[632px]:text-[20px]'>Litumba</h2>
                             <p className='shadow-project_shadow mt-4 max-[632px]:mt-1 w-[140%] max-[632px]:w-[100%] bg-[#5A82AC] p-4 rounded-md text-[25px] max-[1120px]:text-[15px] max-[632px]:text-[10px]'>litumba is a web app that aims at providing a centralized online platform, where members of the Bakweri tribe in Cameroon can meet, share and grow both socially and economically. </p>
                             <div className='mt-4 max-[632px]:mt-1'><span className=' ml-4 max-[632px]:text-[12px]'>Next.js</span><span className='ml-4'>tailwind</span><span className='ml-4'>Mongodb</span></div>
-                            <OpenIcon className='mt-4 max-[632px]:mt-1 ' />
+                            <Link href={"https://litumba-client.vercel.app"}>
+                                <OpenIcon className='mt-4 max-[632px]:mt-1 ' />
+                            </Link>
                         </div>
                     </div>
                     <div className='flex flex-row-reverse items-center mt-[200px] max-[964px]:mt-[100px] max-[632px]:flex-col max-[632px]:items-start'>
                         <div className='relative w-1/2 max-[632px]:w-full max-[632px]:h-[50vw] h-[35vw] max-h-[450px] rounded-md overflow-hidden  max-[632px]:w-'>
-                            <Image src={ndoloPreviewProjects} fill alt='litumba preview project' className='object-cover' />
+                            <Link href={"https://ndolo.cm"}>
+                                <Image src={ndoloPreviewProjects} fill alt='litumba preview project' className='object-cover' />
+                            </Link>
                         </div>
                         <div className=' flex-col w-1/2 flex items-start relative max-[632px]:w-full max-[632px]:mt-4'>
                             <h2 className='text-[40px] text-end header-text  max-[632px]:text-[20px]'>Ndolo</h2>
                             <p className='shadow-project_shadow mt-4 max-[632px]:mt-1 w-[140%] max-[632px]:w-[100%] bg-[#5A82AC] p-4 rounded-md text-[25px] max-[1120px]:text-[15px] max-[632px]:text-[10px]'>Ndolo is an online dating platform for Cameroonians leaving abroad, this web app is out to reduce the stress that Cameroonians living out of the country have in terms of finding a partner that shares their cultural morals and values.</p>
                             <div className='mt-4 max-[632px]:mt-1'><span className=' ml-4 max-[632px]:text-[12px]'>React.js</span><span className='ml-4'>Node.js</span><span className='ml-4'>Mongodb</span></div>
-                            <OpenIcon className='mt-4 max-[632px]:mt-1 ' />
+                            <Link href={"https://ndolo.cm"}>
+                                <OpenIcon className='mt-4 max-[632px]:mt-1 ' />
+                            </Link>
                         </div>
                     </div>
                     <div className='flex items-center mt-[200px] max-[964px]:mt-[100px] max-[632px]:flex-col max-[632px]:items-start'>
                         <div className='relative w-1/2 max-[632px]:w-full max-[632px]:h-[50vw] h-[35vw] max-h-[450px] rounded-md overflow-hidden  max-[632px]:w-'>
-                            <Image src={litumbaPreviewProjects} fill alt='litumba preview project' className='object-cover' />
+                            <Link href={"/"}>
+                                <Image src={personalWebsitePreviewProjects} fill alt='litumba preview project' className='object-cover' />
+                            </Link>
                         </div>
                         <div className=' flex-col w-1/2 flex items-end relative max-[632px]:w-full max-[632px]:mt-4'>
-                            <h2 className='text-[40px] text-end header-text  max-[632px]:text-[20px]'>Litumba</h2>
-                            <p className='shadow-project_shadow mt-4 max-[632px]:mt-1 w-[140%] max-[632px]:w-[100%] bg-[#5A82AC] p-4 rounded-md text-[25px] max-[1120px]:text-[15px] max-[632px]:text-[10px]'>Ndolo is an online dating platform for Cameroonians leaving abroad, this web app is out to reduce the stress that Cameroonians living out of the country have in terms of finding a partner that shares their cultural morals and values.</p>
-                            <div className='mt-4 max-[632px]:mt-1'><span className=' ml-4 max-[632px]:text-[12px]'>React.js</span><span className='ml-4'>Node.js</span><span className='ml-4'>Mongodb</span></div>
-                            <OpenIcon className='mt-4 max-[632px]:mt-1 ' />
+                            <h2 className='text-[40px] text-end header-text  max-[632px]:text-[20px]'>Personal project</h2>
+                            <p className='shadow-project_shadow mt-4 max-[632px]:mt-1 w-[140%] max-[632px]:w-[100%] bg-[#5A82AC] p-4 rounded-md text-[25px] max-[1120px]:text-[15px] max-[632px]:text-[10px]'>As a web developer, I need to have a personal platform where I can showcase my latest projects and capabilities, and tell the world more about myself. this exactly is the purpose of my personal website</p>
+                            <div className='mt-4 max-[632px]:mt-1'><span className=' ml-4 max-[632px]:text-[12px]'>Next.js</span><span className='ml-4'>Tailwind</span><span className='ml-4'>Vercel</span></div>
+                            <div className='mt-4 max-[632px]:mt-1 flex items-center'>
+                                <Link href={"https://github.com/mawitGad/mawit.com"}>
+                                    <GithubIcon className='mr-6 ' />
+                                </Link>
+                                <Link href={"/"}>
+                                    <OpenIcon />
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 </section>
                 {/* The projects section ending*/}
+
+                {/* The stack section beginning */}
+                <section className='mt-[150px] '>
+                    <h3 className=' text-[70px] max-[964px]:text-[50px] max-[632px]:text-[35px] text-center mb-[50px] header-text'>My stack</h3>
+                    <div className='max-w-[1000px] overflow-hidden relative m-auto '>
+                        <div className=' w-max ' id='stack'>
+                            <Image src={expressLogo} alt="express logo" height={50} className={'mx-4 inline'} />
+                            <Image src={mongodbLogo} alt="express logo" height={50} className={'mx-4 inline'} />
+                            <Image src={nextLogo} alt="express logo" height={50} className={'mx-4 inline'} />
+                            <Image src={nodeLogo} alt="express logo" height={50} className={'mx-4 inline'} />
+                            <Image src={reactLogo} alt="express logo" height={50} className={'mx-4 inline'} />
+                            <Image src={scssLogo} alt="express logo" height={50} className={'mx-4 inline'} />
+                            <Image src={socketIoLogo} alt="express logo" height={50} className={'mx-4 inline'} />
+                            <Image src={tailwindLogo} alt="express logo" height={50} className={'mx-4 inline'} />
+                            <Image src={githubLogo} alt="express logo" height={50} className={'mx-4 inline'} />
+                            <Image src={gitLogo} alt="express logo" height={50} className={'mx-4 inline'} />
+                            <Image src={vercelLogo} alt="express logo" height={50} className={'mx-4 inline'} />
+
+                            <Image src={expressLogo} alt="express logo" height={50} className={'mx-4 inline'} />
+                            <Image src={mongodbLogo} alt="express logo" height={50} className={'mx-4 inline'} />
+                            <Image src={nextLogo} alt="express logo" height={50} className={'mx-4 inline'} />
+                            <Image src={nodeLogo} alt="express logo" height={50} className={'mx-4 inline'} />
+                            <Image src={reactLogo} alt="express logo" height={50} className={'mx-4 inline'} />
+                            <Image src={scssLogo} alt="express logo" height={50} className={'mx-4 inline'} />
+                            <Image src={socketIoLogo} alt="express logo" height={50} className={'mx-4 inline'} />
+                            <Image src={tailwindLogo} alt="express logo" height={50} className={'mx-4 inline'} />
+                            <Image src={githubLogo} alt="express logo" height={50} className={'mx-4 inline'} />
+                            <Image src={gitLogo} alt="express logo" height={50} className={'mx-4 inline'} />
+                            <Image src={vercelLogo} alt="express logo" height={50} className={'mx-4 inline'} />
+                        </div>
+                    </div>
+                </section>
+                {/* The stack section ending */}
 
                 {/* The about section beginning*/}
                 <section className='max-w-[800px] relative m-auto'>
@@ -93,17 +143,23 @@ export default function Home() {
                 <footer className='mb-[100px]'>
                     <h3 className='my-[60px] max-[964px]:my-[50px] text-center text-[70px] max-[964px]:text-[50px] max-[632px]:text-[35px] header-text'>Contact me</h3>
                     <div className='text-[25px] max-[1120px]:text-[1rem] flex justify-center'>
-                        <div className='flex items-baseline mx-4'>
+                        <Link href={"https://www.linkedin.com/in/mawit-bikom-754558224/"} className='flex items-baseline mx-4'>
                             <Image src={linkedinLogo} width={28} height={28} alt="linkedIn logo" />
                             <span className='ml-2'>LinkedIn</span>
-                        </div>
-                        <div className='flex items-baseline mx-4'>
+                        </Link>
+                        <div className='flex items-baseline mx-4 cursor-pointer' onClick={saveEmail}>
                             <Image src={gmailLogo} width={28} height={28} alt="linkedIn logo" />
                             <span className='ml-2'>Gmail</span>
                         </div>
                     </div>
                 </footer>
                 {/* The footer section ending */}
+
+                {/* email copied confirmation component beginning*/}
+                <div id='email-confirmation' className='fixed top-[-100px] m-auto w-fit left-0 right-0 border border-2 border-green-500 py-4 px-10 rounded-lg backdrop-blur'>
+                    Email saved to clip board
+                </div>
+                {/* email copied confirmation component ending*/}
             </main>
         </>
     )
