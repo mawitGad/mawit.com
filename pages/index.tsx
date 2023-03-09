@@ -22,6 +22,13 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main className='px-8 w-[100vw] max-w-[1500px] relative m-auto max-[632px]:px-[10px]'>
+
+                {/* background blob beginning */}
+                <div className='w-[60%] animate-slow-spin fixed m-auto top-0 left-0 right-0 bottom-0  aspect-square rounded-full bg-[linear-gradient(red,blue)] opacity-20 blur-lg'>
+
+                </div>
+                {/* background blob ending */}
+
                 {/* The hero section beginning */}
                 <section className=' relative h-fit max-h-[9000px]'>
                     <div className='mt-[20px] flex justify-end'>
@@ -50,7 +57,7 @@ export default function Home() {
                                 <Image src={litumbaPreviewProjects} fill alt='litumba preview project' className='object-cover' />
                             </Link>
                         </div>
-                        <div className=' flex-col w-1/2 flex items-end relative max-[632px]:w-full max-[632px]:mt-4'>
+                        <div id='litumba-project' className=' flex-col w-1/2 flex items-end relative max-[632px]:w-full max-[632px]:mt-4'>
                             <h2 className='text-[40px] text-end header-text  max-[632px]:text-[20px]'>Litumba</h2>
                             <p className='shadow-project_shadow mt-4 max-[632px]:mt-1 w-[140%] max-[632px]:w-[100%] bg-[#5A82AC] p-4 rounded-md text-[25px] max-[1120px]:text-[15px] max-[632px]:text-[10px]'>litumba is a web app that aims at providing a centralized online platform, where members of the Bakweri tribe in Cameroon can meet, share and grow both socially and economically. </p>
                             <div className='mt-4 max-[632px]:mt-1'><span className=' ml-4 max-[632px]:text-[12px]'>Next.js</span><span className='ml-4'>tailwind</span><span className='ml-4'>Mongodb</span></div>
@@ -65,7 +72,7 @@ export default function Home() {
                                 <Image src={ndoloPreviewProjects} fill alt='litumba preview project' className='object-cover' />
                             </Link>
                         </div>
-                        <div className=' flex-col w-1/2 flex items-start relative max-[632px]:w-full max-[632px]:mt-4'>
+                        <div id="ndolo-project" className=' flex-col w-1/2 flex items-start relative max-[632px]:w-full max-[632px]:mt-4'>
                             <h2 className='text-[40px] text-end header-text  max-[632px]:text-[20px]'>Ndolo</h2>
                             <p className='shadow-project_shadow mt-4 max-[632px]:mt-1 w-[140%] max-[632px]:w-[100%] bg-[#5A82AC] p-4 rounded-md text-[25px] max-[1120px]:text-[15px] max-[632px]:text-[10px]'>Ndolo is an online dating platform for Cameroonians leaving abroad, this web app is out to reduce the stress that Cameroonians living out of the country have in terms of finding a partner that shares their cultural morals and values.</p>
                             <div className='mt-4 max-[632px]:mt-1'><span className=' ml-4 max-[632px]:text-[12px]'>React.js</span><span className='ml-4'>Node.js</span><span className='ml-4'>Mongodb</span></div>
@@ -80,7 +87,7 @@ export default function Home() {
                                 <Image src={personalWebsitePreviewProjects} fill alt='litumba preview project' className='object-cover' />
                             </Link>
                         </div>
-                        <div className=' flex-col w-1/2 flex items-end relative max-[632px]:w-full max-[632px]:mt-4'>
+                        <div id='personal-website-project' className=' flex-col w-1/2 flex items-end relative max-[632px]:w-full max-[632px]:mt-4'>
                             <h2 className='text-[40px] text-end header-text  max-[632px]:text-[20px]'>Personal project</h2>
                             <p className='shadow-project_shadow mt-4 max-[632px]:mt-1 w-[140%] max-[632px]:w-[100%] bg-[#5A82AC] p-4 rounded-md text-[25px] max-[1120px]:text-[15px] max-[632px]:text-[10px]'>As a web developer, I need to have a personal platform where I can showcase my latest projects and capabilities, and tell the world more about myself. this exactly is the purpose of my personal website</p>
                             <div className='mt-4 max-[632px]:mt-1'><span className=' ml-4 max-[632px]:text-[12px]'>Next.js</span><span className='ml-4'>Tailwind</span><span className='ml-4'>Vercel</span></div>
