@@ -69,7 +69,7 @@ export default function Home() {
                   to my personal website, I am
                 </span>
                 <br />
-                Mawit Bikom Gad, A full-stack web developer
+                Mawit Bikom Gad, A full-stack web developer test
               </h3>
               <p className="normal-text mt-[50px] max-[632px]:text-[15px] max-[1120px]:mt-[25px]">
                 I am a self-taught full-stack web developer with a passion for
