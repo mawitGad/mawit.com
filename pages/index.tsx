@@ -1,19 +1,37 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
 import {
-  expressLogo,
+  axiosStackLogo,
+  cssStackLogo,
+  expresStackLogo,
   githubLogo,
+  githubStackLogo,
   gitLogo,
+  gitStackLogo,
   gmailLogo,
+  herokuStackLogo,
+  htmlStackLogo,
+  jsStackLogo,
   linkedinLogo,
   mongodbLogo,
+  mongodbStackLogo,
+  mongooseStackLogo,
   nextLogo,
+  nextStackLogo,
   nodeLogo,
+  nodeStackLogo,
+  prismaStackLogo,
   reactLogo,
+  reactStackLogo,
+  reduxStackLogo,
   scssLogo,
+  scssStackLogo,
   socketIoLogo,
+  socketIOStackLogo,
   tailwindLogo,
+  tailwindStackLogo,
   vercelLogo,
+  vercelStackLogo,
 } from "@/assets/logos";
 import {
   avatar,
@@ -45,7 +63,7 @@ export default function Home() {
       </Head>
       <main className="px-8 w-[100vw] max-w-[1500px] relative m-auto max-[632px]:px-[10px]">
         {/* background blob beginning */}
-        <div className="w-[60%] animate-slow-spin fixed m-auto top-0 left-0 right-0 bottom-0  aspect-square rounded-full bg-[linear-gradient(red,blue)] opacity-20 blur-lg"></div>
+        <div className="w-[60%] animate-slow-spin fixed m-auto top-0 left-0 right-0 bottom-0  aspect-square rounded-full bg-[linear-gradient(red,blue)] opacity-20 blur-lg0 z-[-1]"></div>
         {/* background blob ending */}
 
         {/* The hero section beginning */}
@@ -54,6 +72,7 @@ export default function Home() {
             <Link
               href={"https://mawit.hashnode.dev/"}
               className="text-[25px] flex items-center py-[5px] px-[10px] bg-[#5A82AC] rounded-lg header-text"
+              target={"_blank"}
             >
               <BlogIcon className="w-[30px] h-[30px] mr-4" />
               <span>My blog</span>
@@ -97,7 +116,10 @@ export default function Home() {
           </h3>
           <div className="flex items-center mt-[200px] max-[964px]:mt-[100px] max-[632px]:flex-col max-[632px]:items-start">
             <div className="relative w-1/2 max-[632px]:w-full max-[632px]:h-[50vw] h-[35vw] max-h-[450px] rounded-md overflow-hidden  max-[632px]:w-">
-              <Link href={"https://litumba-client.vercel.app"}>
+              <Link
+                href={"https://litumba-client.vercel.app"}
+                target={"_blank"}
+              >
                 <Image
                   src={litumbaPreviewProjects}
                   fill
@@ -123,14 +145,17 @@ export default function Home() {
                 <span className="ml-4">tailwind</span>
                 <span className="ml-4">Mongodb</span>
               </div>
-              <Link href={"https://litumba-client.vercel.app"}>
+              <Link
+                href={"https://litumba-client.vercel.app"}
+                target={"_blank"}
+              >
                 <OpenIcon className="mt-4 max-[632px]:mt-1 " />
               </Link>
             </div>
           </div>
           <div className="flex flex-row-reverse items-center mt-[200px] max-[964px]:mt-[100px] max-[632px]:flex-col max-[632px]:items-start">
             <div className="relative w-1/2 max-[632px]:w-full max-[632px]:h-[50vw] h-[35vw] max-h-[450px] rounded-md overflow-hidden  max-[632px]:w-">
-              <Link href={"https://ndolo.cm"}>
+              <Link href={"https://ndolo.cm"} target={"_blank"}>
                 <Image
                   src={ndoloPreviewProjects}
                   fill
@@ -157,7 +182,7 @@ export default function Home() {
                 <span className="ml-4">Node.js</span>
                 <span className="ml-4">Mongodb</span>
               </div>
-              <Link href={"https://ndolo.cm"}>
+              <Link href={"https://ndolo.cm"} target={"_blank"}>
                 <OpenIcon className="mt-4 max-[632px]:mt-1 " />
               </Link>
             </div>
@@ -192,7 +217,10 @@ export default function Home() {
                 <span className="ml-4">Vercel</span>
               </div>
               <div className="mt-4 max-[632px]:mt-1 flex items-center">
-                <Link href={"https://github.com/mawitGad/mawit.com"}>
+                <Link
+                  href={"https://github.com/mawitGad/mawit.com"}
+                  target={"_blank"}
+                >
                   <GithubIcon className="mr-6 " />
                 </Link>
                 <Link href={"/"}>
@@ -209,141 +237,217 @@ export default function Home() {
           <h3 className=" text-[70px] max-[964px]:text-[50px] max-[632px]:text-[35px] text-center mb-[50px] header-text">
             My stack
           </h3>
-          <div className="max-w-[1000px] overflow-hidden relative m-auto ">
-            <div className=" w-max " id="stack">
-              <Image
-                src={expressLogo}
-                alt="express logo"
-                height={50}
-                className={"mx-4 inline"}
-              />
-              <Image
-                src={mongodbLogo}
-                alt="express logo"
-                height={50}
-                className={"mx-4 inline"}
-              />
-              <Image
-                src={nextLogo}
-                alt="express logo"
-                height={50}
-                className={"mx-4 inline"}
-              />
-              <Image
-                src={nodeLogo}
-                alt="express logo"
-                height={50}
-                className={"mx-4 inline"}
-              />
-              <Image
-                src={reactLogo}
-                alt="express logo"
-                height={50}
-                className={"mx-4 inline"}
-              />
-              <Image
-                src={scssLogo}
-                alt="express logo"
-                height={50}
-                className={"mx-4 inline"}
-              />
-              <Image
-                src={socketIoLogo}
-                alt="express logo"
-                height={50}
-                className={"mx-4 inline"}
-              />
-              <Image
-                src={tailwindLogo}
-                alt="express logo"
-                height={50}
-                className={"mx-4 inline"}
-              />
-              <Image
-                src={githubLogo}
-                alt="express logo"
-                height={50}
-                className={"mx-4 inline"}
-              />
-              <Image
-                src={gitLogo}
-                alt="express logo"
-                height={50}
-                className={"mx-4 inline"}
-              />
-              <Image
-                src={vercelLogo}
-                alt="express logo"
-                height={50}
-                className={"mx-4 inline"}
-              />
-
-              <Image
-                src={expressLogo}
-                alt="express logo"
-                height={50}
-                className={"mx-4 inline"}
-              />
-              <Image
-                src={mongodbLogo}
-                alt="express logo"
-                height={50}
-                className={"mx-4 inline"}
-              />
-              <Image
-                src={nextLogo}
-                alt="express logo"
-                height={50}
-                className={"mx-4 inline"}
-              />
-              <Image
-                src={nodeLogo}
-                alt="express logo"
-                height={50}
-                className={"mx-4 inline"}
-              />
-              <Image
-                src={reactLogo}
-                alt="express logo"
-                height={50}
-                className={"mx-4 inline"}
-              />
-              <Image
-                src={scssLogo}
-                alt="express logo"
-                height={50}
-                className={"mx-4 inline"}
-              />
-              <Image
-                src={socketIoLogo}
-                alt="express logo"
-                height={50}
-                className={"mx-4 inline"}
-              />
-              <Image
-                src={tailwindLogo}
-                alt="express logo"
-                height={50}
-                className={"mx-4 inline"}
-              />
-              <Image
-                src={githubLogo}
-                alt="express logo"
-                height={50}
-                className={"mx-4 inline"}
-              />
-              <Image
-                src={gitLogo}
-                alt="express logo"
-                height={50}
-                className={"mx-4 inline"}
-              />
-              <Image
-                src={vercelLogo}
-                alt="express logo"
-                height={50}
-                className={"mx-4 inline"}
-              />
+          <div className="flex flex-wrap justify-around">
+            <div className="py-4 px-4 border border-[1px] max-[830px]:w-[200px] w-[350px] m-4 backdrop-blur bg-[#ffffff10] rounded-lg hover:bg-[#ffffff30] hover:shadow-[4px_2px_100px_20px_#ffffff25] transition duration-[0.3s]">
+              <h3 className="text-[40px] max-[964px]:text-[30px] max-[632px]:text-[25px] header-text ">
+                Languages
+              </h3>
+              <div className="flex items-center my-4">
+                <Image
+                  src={htmlStackLogo}
+                  alt="html logo"
+                  height={35}
+                  width={35}
+                />
+                <span className="ml-2">Html 5</span>
+              </div>
+              <div className="flex items-center my-4">
+                <Image
+                  src={cssStackLogo}
+                  alt="html logo"
+                  height={35}
+                  width={35}
+                />
+                <span className="ml-2">Css 3</span>
+              </div>
+              <div className="flex items-center my-4">
+                <Image
+                  src={jsStackLogo}
+                  alt="html logo"
+                  height={35}
+                  width={35}
+                />
+                <span className="ml-2">JavaScript</span>
+              </div>
+            </div>
+            <div className="py-4 px-4 border border-[1px] max-[830px]:w-[200px] w-[350px] m-4 backdrop-blur bg-[#ffffff10] rounded-lg hover:bg-[#ffffff30] hover:shadow-[4px_2px_100px_20px_#ffffff25] transition duration-[0.3s]">
+              <h3 className="text-[40px] max-[964px]:text-[30px] max-[632px]:text-[25px] header-text ">
+                Frameworks
+              </h3>
+              <div className="flex items-center my-4">
+                <Image
+                  src={nextStackLogo}
+                  alt="html logo"
+                  height={35}
+                  width={35}
+                />
+                <span className="ml-2">Next js</span>
+              </div>
+              <div className="flex items-center my-4">
+                <Image
+                  src={expresStackLogo}
+                  alt="html logo"
+                  height={35}
+                  width={35}
+                />
+                <span className="ml-2">Express js</span>
+              </div>
+              <div className="flex items-center my-4">
+                <Image
+                  src={nodeStackLogo}
+                  alt="html logo"
+                  height={35}
+                  width={35}
+                />
+                <span className="ml-2">Node js</span>
+              </div>
+            </div>
+            <div className="py-4 px-4 border border-[1px] max-[830px]:w-[200px] w-[350px] m-4 backdrop-blur bg-[#ffffff10] rounded-lg hover:bg-[#ffffff30] hover:shadow-[4px_2px_100px_20px_#ffffff25] transition duration-[0.3s]">
+              <h3 className="text-[40px] max-[964px]:text-[30px] max-[632px]:text-[25px] header-text ">
+                Libraries
+              </h3>
+              <div className="flex items-center my-4">
+                <Image
+                  src={reactStackLogo}
+                  alt="html logo"
+                  height={35}
+                  width={35}
+                />
+                <span className="ml-2">React js</span>
+              </div>
+              <div className="flex items-center my-4">
+                <Image
+                  src={axiosStackLogo}
+                  alt="html logo"
+                  height={35}
+                  width={35}
+                />
+                <span className="ml-2">Axios </span>
+              </div>
+              <div className="flex items-center my-4">
+                <Image
+                  src={reduxStackLogo}
+                  alt="html logo"
+                  height={35}
+                  width={35}
+                />
+                <span className="ml-2">Redux</span>
+              </div>
+              <div className="flex items-center my-4">
+                <Image
+                  src={socketIOStackLogo}
+                  alt="html logo"
+                  height={35}
+                  width={35}
+                />
+                <span className="ml-2">socket.io </span>
+              </div>
+            </div>
+            <div className="py-4 px-4 border border-[1px] max-[830px]:w-[200px] w-[350px] m-4 backdrop-blur bg-[#ffffff10] rounded-lg hover:bg-[#ffffff30] hover:shadow-[4px_2px_100px_20px_#ffffff25] transition duration-[0.3s]">
+              <h3 className="text-[40px] max-[964px]:text-[30px] max-[632px]:text-[25px] header-text ">
+                Database
+              </h3>
+              <div className="flex items-center my-4">
+                <Image
+                  src={mongodbStackLogo}
+                  alt="html logo"
+                  height={35}
+                  width={35}
+                />
+                <span className="ml-2">Mongodb</span>
+              </div>
+            </div>
+            <div className="py-4 px-4 border border-[1px] max-[830px]:w-[200px] w-[350px] m-4 backdrop-blur bg-[#ffffff10] rounded-lg hover:bg-[#ffffff30] hover:shadow-[4px_2px_100px_20px_#ffffff25] transition duration-[0.3s]">
+              <h3 className="text-[40px] max-[964px]:text-[30px] max-[632px]:text-[25px] header-text ">
+                ORM
+              </h3>
+              <div className="flex items-center my-4">
+                <Image
+                  src={mongooseStackLogo}
+                  alt="html logo"
+                  height={35}
+                  width={35}
+                />
+                <span className="ml-2">Mongoose</span>
+              </div>
+              <div className="flex items-center my-4">
+                <Image
+                  src={prismaStackLogo}
+                  alt="html logo"
+                  height={35}
+                  width={35}
+                />
+                <span className="ml-2">Prisma</span>
+              </div>
+            </div>
+            <div className="py-4 px-4 border border-[1px] max-[830px]:w-[200px] w-[350px] m-4 backdrop-blur bg-[#ffffff10] rounded-lg hover:bg-[#ffffff30] hover:shadow-[4px_2px_100px_20px_#ffffff25] transition duration-[0.3s]">
+              <h3 className="text-[40px] max-[964px]:text-[30px] max-[632px]:text-[25px] header-text ">
+                Version control
+              </h3>
+              <div className="flex items-center my-4">
+                <Image
+                  src={gitStackLogo}
+                  alt="html logo"
+                  height={35}
+                  width={35}
+                />
+                <span className="ml-2">git</span>
+              </div>
+              <div className="flex items-center my-4">
+                <Image
+                  src={githubStackLogo}
+                  alt="html logo"
+                  height={35}
+                  width={35}
+                />
+                <span className="ml-2">github</span>
+              </div>
+            </div>
+            <div className="py-4 px-4 border border-[1px] max-[830px]:w-[200px] w-[350px] m-4 backdrop-blur bg-[#ffffff10] rounded-lg hover:bg-[#ffffff30] hover:shadow-[4px_2px_100px_20px_#ffffff25] transition duration-[0.3s]">
+              <h3 className="text-[40px] max-[964px]:text-[30px] max-[632px]:text-[25px] header-text ">
+                Styling
+              </h3>
+              <div className="flex items-center my-4">
+                <Image
+                  src={scssStackLogo}
+                  alt="html logo"
+                  height={35}
+                  width={35}
+                />
+                <span className="ml-2">SCSS</span>
+              </div>
+              <div className="flex items-center my-4">
+                <Image
+                  src={tailwindStackLogo}
+                  alt="html logo"
+                  height={35}
+                  width={35}
+                />
+                <span className="ml-2">Tailwind css</span>
+              </div>
+            </div>
+            <div className="py-4 px-4 border border-[1px] max-[830px]:w-[200px] w-[350px] m-4 backdrop-blur bg-[#ffffff10] rounded-lg hover:bg-[#ffffff30] hover:shadow-[4px_2px_100px_20px_#ffffff25] transition duration-[0.3s]">
+              <h3 className="text-[40px] max-[964px]:text-[30px] max-[632px]:text-[25px] header-text ">
+                Platforms
+              </h3>
+              <div className="flex items-center my-4">
+                <Image
+                  src={herokuStackLogo}
+                  alt="html logo"
+                  height={35}
+                  width={35}
+                />
+                <span className="ml-2">Heroku</span>
+              </div>
+              <div className="flex items-center my-4">
+                <Image
+                  src={vercelStackLogo}
+                  alt="html logo"
+                  height={35}
+                  width={35}
+                />
+                <span className="ml-2">Vercel</span>
+              </div>
             </div>
           </div>
         </section>
@@ -377,7 +481,7 @@ export default function Home() {
         {/* The about section ending*/}
 
         {/* The footer section beginning */}
-        <footer className="mb-[100px]">
+        <footer className="mb-[100px] ">
           <h3 className="my-[60px] max-[964px]:my-[50px] text-center text-[70px] max-[964px]:text-[50px] max-[632px]:text-[35px] header-text">
             Contact me
           </h3>
@@ -385,6 +489,7 @@ export default function Home() {
             <Link
               href={"https://www.linkedin.com/in/mawit-bikom-754558224/"}
               className="flex items-baseline mx-4"
+              target={"_blank"}
             >
               <Image
                 src={linkedinLogo}
